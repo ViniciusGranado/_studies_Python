@@ -1,4 +1,4 @@
-# Challenge 001
+# Exercício 002
 Criar um programa que pergunta o nome do usuário, armazena em uma variável,
 e mostra uma mensagem de cumprimento.
 
