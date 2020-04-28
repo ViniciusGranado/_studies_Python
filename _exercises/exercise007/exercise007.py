@@ -24,7 +24,7 @@ def get_numbers():
 
 
 def show_arithmetic_mean(number1, number2):
-    print('A média aritmética de {} e {} é {}.'.format(number1, number2, (number1+number2)/2))
+    print('A média aritmética de {} e {} é {:.2f}'.format(number1, number2, (number1+number2)/2))
 
 
 get_numbers()
