@@ -1,8 +1,12 @@
 def validate_value(number_str):
     number_is_valid = True
-    for i in number_str:
-        if not (i.isnumeric() or i=='.') or (number_str[-1]=='.'):
-            number_is_valid = False
+
+    if number_str=='':
+        number_is_valid = False
+    else:
+        for i in number_str:
+            if not (i.isnumeric() or i=='.') or (number_str[-1]=='.'):
+                number_is_valid = False
 
     return number_is_valid
 
