@@ -40,9 +40,9 @@ adjustment_amount = salary*adjustment/100
 new_salary = salary + adjustment_amount
 
 
-formatted_salary = str('%.2f' % salary)
-formatted_adjustment_amount = str('%.2f' % abs(adjustment_amount))
-formatted_new_salary = str('%.2f' % new_salary)
+formatted_salary = str('%.2f' % salary).replace('.', ',')
+formatted_adjustment_amount = str('%.2f' % abs(adjustment_amount)).replace('.', ',')
+formatted_new_salary = str('%.2f' % new_salary).replace('.', ',')
 
 if adjustment_amount>0:
     mensagem = 'um aumento'
