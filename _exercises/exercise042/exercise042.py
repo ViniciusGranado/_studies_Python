@@ -30,7 +30,7 @@ def check_triangle(side1, side2, side3):
 def get_category(side1, side2, side3):
     if side1 == side2 == side3:
         return 'EQUILÁTERO'
-    elif side1 != side2 != side3:
+    elif side1 != side2 != side3 != side1:
         return 'ESCALENO'
     else:
         return 'ISÓSCELES'
