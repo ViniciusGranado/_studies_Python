@@ -1,0 +1,12 @@
+teams = ('Flamengo', 'Santos', 'Palmeiras', 'Grêmio', 'Athlético-PR', 'São Paulo', 'Internacional', 'Corinthians', 'Fortaleza', 'Goiás', 'Bahia', 'Vasco', 'Athlético-MG', 'Fluminense', 'Botafogo', 'Ceará', 'Cruzeiro', 'CSA', 'Chapecoense', 'Avaí')
+
+print('-='*20)
+print(f'Lista de times do Brasileirão: {teams}')
+print('-='*20)
+print(f'Os 5 primeiros são {teams[:5]}')
+print('-='*20)
+print(f'Os 4 últimos são: {teams[-4:]}')
+print('-='*20)
+print(f'Times em ordem alfabética: {sorted(teams)}')
+print('-='*20)
+print(f'O Chapecoense está na {teams.index("Chapecoense")+1}ª posição.')
