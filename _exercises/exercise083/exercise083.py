@@ -1,17 +1,16 @@
 def check_expression(expression_str):
-    is_valid = True
+    control = 0
 
     for i in expression_str:
         if i == '(':
-            break
+            control += 1
         if i == ')':
-            is_valid = False
-            break
+            if control > 0:
+                control -= 1
+            else:
+                control += 1
 
-    if expression_str[expression_str.index('('):].count('(') != expression_str[expression_str.index('('):].count(')'):
-        is_valid = False
-
-    return is_valid
+    return control == 0
 
 
 expression = input('Digite a expressão matemática à ser analisada: ').strip()
@@ -21,4 +20,4 @@ is_expression_valid = check_expression(expression)
 if is_expression_valid:
     print('Sua expressão é valida')
 else:
-    print('Sua expressão não é valida.')
+    print('Sua expressão não é valida. Verifique os parênteses.')
