@@ -24,10 +24,9 @@ def get_number():
             print('Valor inválido.')
 
 
-student = {
-    'name': input('Nome: ').strip().title(),
-    'mean': get_number()
-}
+student = dict()
+student['name'] = input('Nome: ').strip().title()
+student['mean'] = get_number()
 
 if student['mean'] >= 7:
     student['situation'] = 'Aprovado'
@@ -39,5 +38,5 @@ else:
 print('-='*20)
 
 print(f'- Nome do aluno: {student["name"]}')
-print(f'- Média do aluno: {student["mean"]}')
+print(f'- Média do aluno: {student["mean"]:.1f}')
 print(f'- Situação do aluno: {student["situation"]}')
