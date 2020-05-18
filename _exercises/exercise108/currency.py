@@ -1,4 +1,4 @@
-def increase10percent(value=0, n=0):
+def increase_n_percent(value=0, n=0):
     """
     -> Returns the given 'value' with added 'n' percent.
     :param value: Type: num. The given number to be calculated.
@@ -8,7 +8,7 @@ def increase10percent(value=0, n=0):
     return value + (value*n/100)
 
 
-def decrease10percent(value=0, n=0):
+def decrease_n_percent(value=0, n=0):
     """
     -> Returns the given 'value' with subtracted 'n' percent.
     :param value: Type: num. The given number to be calculated.
