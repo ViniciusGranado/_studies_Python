@@ -1,1 +1,1 @@
-from _exercises.exercise112.utilities import currency, data
+from utilities import currency, data
